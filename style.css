@@ -39,8 +39,9 @@
 /* Main Body */
 .main-body{
     display: flex;
-    justify-content: center;
-    
+    justify-content:center;
+    font-family: 'Roboto', sans-serif;
+
 }
 /* =======User Card============ */
 .profile-info-container{
@@ -99,17 +100,49 @@ h4{
     margin-left: 30px;
 }
 /* People Requesting */
+.connect-req{
+    border: 2px solid darkgray;
+    margin-top: 50px;
+    width: 250px;
+}
 .con-req-header{
     display: flex;
+    align-items: center;
+    padding-left: 30px;
+    background-color: rgb(34, 31, 31);
+    color: whitesmoke;
 }
-.people-requesting{
-
+.con-req-body{
+    margin: 30px 20px;
 }
 .people-requesting img{
     height: 15px;
     width: 15px;
 }
+.people-requesting{
+    display: flex;
+    justify-content:space-between;
+
+}
 .people-requesting img, .people-requesting h3{
     display: inline-block;
     margin: 0;
+}
+
+/* Connections */
+.connections{
+    border: 2px solid darkgray;
+    margin-top: 50px;
+    width: 250px;
+}
+.connect-footer{
+    border-top: 2px solid darkgray;
+    margin-top: 20px;
+    padding-top: 10px;
+}
+.right-div{
+    margin-right: 40px;
+}
+.left-div{
+    margin-right: 40px;
 }
