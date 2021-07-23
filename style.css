@@ -2,7 +2,7 @@
 .nav{
     display: flex;
     width: 100%;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgb(46, 43, 43);
 }
@@ -10,11 +10,13 @@
     color: white;
     margin-left: 10px;
     font-family: 'Roboto', sans-serif;
+    margin-right: 220px;
 }
 .nav-links{
     display: flex;
     list-style: none;
     justify-content:space-around;
+    margin-right: 30px;
 }
 .nav-links li{
     margin-right: 10px;
