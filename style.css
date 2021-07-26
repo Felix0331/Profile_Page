@@ -129,6 +129,7 @@ h4{
 .people-requesting img, .people-requesting h3{
     display: inline-block;
     margin: 0;
+
 }
 #req-number{
     height: 25px;

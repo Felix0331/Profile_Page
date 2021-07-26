@@ -32,13 +32,13 @@
                 <div class="color-bar"></div>
                 <img id="user-icon" src="./icons/user-circle.png" alt="icon of a anonymous user">
                 <div class="profile-details">
-                    <h2>Felix Almejo</h2>
+                    <h2 id="change-profile-name">Felix Almejo</h2>
                     <h4><img class="icon-images" src="./icons/map-marker.png" alt="location pin icon">Seattle</h4>
                     <p>Developer| Engineer | Problem Solver<br>
                         Master of shadows and the Internet!</p>
                     <div class="edit">
                         <img class="icon-images" src="./icons/gear.png" alt="icon of a gear">
-                        <a href="#">edit profile</a>
+                        <a onclick="changeName('change-profile-name');" href="#">edit profile</a>
                     </div>
                 </div>
             </div>
@@ -63,31 +63,31 @@
                     <h4>Connection Requests</h4>
                 </div>
                 <div class="con-req-body">
-                    <div class="people-requesting">
+                    <div id="first-req" class="people-requesting">
                         <div>
                             <img src="./icons/user-circle.png" alt="user icon">
                             <h3>Todd E</h3>
                         </div>
                         <div class="accept-decline">
-                            <img src="./icons/accept-circle.png" alt="accept icon">
-                            <img src="./icons/close-circle.png" alt="accept icon">
+                            <img onclick="increaseFriends('first-req')" src="./icons/accept-circle.png"  alt="accept icon">
+                            <img onclick="keepFriendsSame('first-req')" src="./icons/close-circle.png" alt="accept icon">
                         </div>
                     </div>
-                    <div class="people-requesting">
+                    <div id="second-req" class="people-requesting">
                         <div>
                             <img src="./icons/user-circle.png" alt="user icon">
                             <h3>Jerome J</h3>
                         </div>
                         <div class="accept-decline">
-                            <img src="./icons/accept-circle.png" alt="accept icon">
-                            <img src="./icons/close-circle.png" alt="accept icon">
+                            <img onclick="increaseFriends('second-req')" src="./icons/accept-circle.png" alt="accept icon">
+                            <img onclick="keepFriendsSame('second-req')" src="./icons/close-circle.png" alt="decline icon">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="connections">
                 <div class="con-req-header">
-                    <p id="connect-number">500+</p>
+                    <p id="connect-number">400</p>
                     <h4>Connections</h4>
                 </div>
                 <div class="con-req-body">
@@ -120,8 +120,8 @@
                     <a href="#">View More</a>
                 </div>
             </div>
-
         </div>
+        <script src="script.js"></script>
 </body>
 
 </html>
