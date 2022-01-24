@@ -23,3 +23,5 @@ function keepFriendsSame(request){
     document.getElementById("req-number").innerText=pendingRequestNum;  
 
 }
+
+
